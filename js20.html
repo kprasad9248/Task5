@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style20.css">
+</head>
+<body>
+    <div class="container-fluid bg-dark text-light py-3">
+        <header class="text-center">
+            <h1 class="display-6">welcome to our page</h1>
+        </header>
+    </div>
+  
+
+    <div class="container mt-5">
+        <h2>Web Training Centre</h2>
+        <p>Validate form fields using javascript - the beginners way</p>
+    </div>
+
+
+
+    <div class="container mt-5">
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Your name :</label>
+                <input type="text" class="form-control" id="name" name="name">
+                <div class="error-message" id="nameError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" class="form-control" id="email" name="email">
+                <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Gender :</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="male" name="gender" value="male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="female" name="gender" value="female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="error-message" id="genderError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of birth :</label>
+                <input type="date" class="form-control" id="dob" name="dob" placeholder="mm/dd/yyyy">
+                <div class="error-message" id="dobError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Mobile :</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+                <div class="error-message" id="phoneError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address :</label>
+                <input type="text" class="form-control" id="address" name="address">
+                <div class="error-message" id="addressError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City :</label>
+                <select class="form-control" id="city" name="city">
+                    <option value="">Select your city</option>
+                    <option value="rajahmundry">Rajahmundry</option>
+                    <option value="kakinada">Kakinada</option>
+                    <option value="mandapeta">Mandapeta</option>
+                </select>
+                <div class="error-message" id="cityError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country :</label>
+                <input type="text" class="form-control" id="country" name="country">
+                <div class="error-message" id="countryError"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Expertise :</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="html" name="expertise" value="HTML">
+                    <label class="form-check-label" for="html">HTML</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="css" name="expertise" value="CSS">
+                    <label class="form-check-label" for="css">CSS</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="javascript" name="expertise" value="JavaScript">
+                    <label class="form-check-label" for="javascript">JavaScript</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="jquery" name="expertise" value="jQuery">
+                    <label class="form-check-label" for="jquery">jQuery</label>
+                </div>
+                <div class="error-message" id="expertiseError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="group">Group :</label>
+                <select class="form-control" id="group" name="group">
+                    <option value="">Select your Group</option>
+                    <option value="group1">Group1</option>
+                    <option value="group2">Group2</option>
+                    <option value="group3">Group3</option>
+                    <option value="group4">Group4</option>
+                </select>
+                <div class="error-message" id="groupError"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+
+        <div id="successMessage">
+            <p>Congratulations!</p>
+            <p>You have successfully validated the form</p>
+            <button type="button" class="btn btn-outline-success" id="showFormButton">Show the form again</button>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/javascript/js020.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
